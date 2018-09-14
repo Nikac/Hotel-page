@@ -14,7 +14,7 @@
 			<img src="img/logo.png" alt="logo" class="logo">
 			
 			<form action="#" class="search">
-				<input type="text" name="search" placeholder="search hotels" class="search__input">
+				<input type="text" name="search" placeholder="Search hotels" class="search__input">
 				<button class="search__btn">
 					<svg class="search__icon">
 						<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -23,14 +23,68 @@
 			</form>
 
 			<nav class="user-nav">
-				Navigation
+				<div class="user-nav__icon-box">
+					<svg class="user-nav__icon">
+						<use xlink:href="img/sprite.svg#icon-bookmark"></use>
+						<span class="user-nav__notification">7</span>
+					</svg>
+				</div>
+
+				<div class="user-nav__icon-box">
+					<svg class="user-nav__icon">
+						<use xlink:href="img/sprite.svg#icon-chat"></use>
+					</svg>
+					<span class="user-nav__notification">13</span>
+				</div>
+				<div class="user-nav__user">
+					<img src="img/user.jpg" alt="user photo"class="user-nav__user-photo">
+					<span class="user-nav__user-name">Jonas</span>
+				</div>
 			</nav>
 		</header>
 
 		<div class="content">
-			<nav class="sidebar">
-				Navigation
+			<nav class="sidebar-nav">
+				<ul class="sidebar-nav__navigation">
+					<li class="sidebar-nav__block sidebar-nav__block--active">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-home"></use>
+							</svg>	
+							Hotel
+						</a>
+					</li>
+					<li class="sidebar-nav__block">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-airplane"></use>
+							</svg>
+							Flight
+						</a>
+					</li>
+					<li class="sidebar-nav__block">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-key"></use>
+							</svg>	
+							Car Rental
+						</a>
+					</li>
+					<li class="sidebar-nav__block">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-map"></use>
+							</svg>	
+							Tours
+						</a>
+					</li>
+				</ul>
+
+				<div class="legal">
+					<p> &copy; All right reserved 2018</p>
+				</div>
 			</nav>
+			
 			<main class="hotel-view">
 				hotel review
 			</main>
