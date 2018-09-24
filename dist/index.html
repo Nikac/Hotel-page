@@ -14,7 +14,7 @@
 			<img src="img/logo.png" alt="logo" class="logo">
 			
 			<form action="#" class="search">
-				<input type="text" name="search" placeholder="search hotels" class="search__input">
+				<input type="text" name="search" placeholder="Search hotels" class="search__input">
 				<button class="search__btn">
 					<svg class="search__icon">
 						<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -23,16 +23,203 @@
 			</form>
 
 			<nav class="user-nav">
-				Navigation
+				<div class="user-nav__icon-box">
+					<svg class="user-nav__icon">
+						<use xlink:href="img/sprite.svg#icon-bookmark"></use>
+						<span class="user-nav__notification">7</span>
+					</svg>
+				</div>
+
+				<div class="user-nav__icon-box">
+					<svg class="user-nav__icon">
+						<use xlink:href="img/sprite.svg#icon-chat"></use>
+					</svg>
+					<span class="user-nav__notification">13</span>
+				</div>
+				<div class="user-nav__user">
+					<img src="img/user.jpg" alt="user photo"class="user-nav__user-photo">
+					<span class="user-nav__user-name">Jonas</span>
+				</div>
 			</nav>
 		</header>
 
 		<div class="content">
-			<nav class="sidebar">
-				Navigation
+			<nav class="sidebar-nav">
+				<ul class="sidebar-nav__navigation">
+					<li class="sidebar-nav__block sidebar-nav__block--active">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-home"></use>
+							</svg>	
+							Hotel
+						</a>
+					</li>
+					<li class="sidebar-nav__block">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-airplane"></use>
+							</svg>
+							Flight
+						</a>
+					</li>
+					<li class="sidebar-nav__block">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-key"></use>
+							</svg>	
+							Car Rental
+						</a>
+					</li>
+					<li class="sidebar-nav__block">
+						<a href="#" class="sidebar-nav__link">
+							<svg class="sidebar-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-map"></use>
+							</svg>	
+							Tours
+						</a>
+					</li>
+				</ul>
+
+				<div class="legal">
+					<p> &copy; All right reserved 2018</p>
+				</div>
 			</nav>
+			
 			<main class="hotel-view">
-				hotel review
+				<div class="gallery">
+					<figure class="gallery__item">
+						<img src="img/hotel1.jpg" alt="Photo of hotel" class="gallery__photo">
+					</figure>
+					<figure class="gallery__item">
+						<img src="img/hotel2.jpg" alt="Photo of hotel" class="gallery__photo">
+					</figure>
+					<figure class="gallery__item">
+						<img src="img/hotel3.jpg" alt="Photo of hotel" class="gallery__photo">
+					</figure>
+				</div>
+
+				<div class="overview">
+					<h1 class="overview__heading">Hotel Las Palmas</h1>
+					
+					<div class="overview__stars">
+						<svg class="overview__icon">
+							<use xlink:href="img/sprite.svg#icon-star"></use>
+						</svg>
+
+						<svg class="overview__icon">
+							<use xlink:href="img/sprite.svg#icon-star"></use>
+						</svg>
+
+						<svg class="overview__icon">
+							<use xlink:href="img/sprite.svg#icon-star"></use>
+						</svg>
+
+						<svg class="overview__icon">
+							<use xlink:href="img/sprite.svg#icon-star"></use>
+						</svg>
+
+						<svg class="overview__icon">
+							<use xlink:href="img/sprite.svg#icon-star"></use>
+						</svg>
+					</div>
+
+					<div class="overview__location">
+						<svg class="overview__icon">
+							<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+						</svg>
+						<button class="overview__btn btn">Albufeira, Portugal</button class="">
+					</div>
+
+					<div class="overview__rating">
+						<div class="overview__rating-averge">8.6</div>
+						<div class="overview__rating-count">429 votes</div>
+					</div>
+				</div>
+
+				<div class="detail">
+					<div class="detail__description">
+						<p class="detail__paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+
+						<p class="detail__paragraph">
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+
+						<ul class="detail__list">
+							<li class="detail__item">Close to the beach</li>
+							<li class="detail__item">Breakfest included</li>
+							<li class="detail__item">Free wifi in all rooms</li>
+							<li class="detail__item">Air condioning and heating</li>
+							<li class="detail__item">Pets allowed</li>
+							<li class="detail__item">We speak all languages</li>
+							<li class="detail__item">Perfect for families</li>
+						</ul>
+
+						<div class="detail__recommend">
+							<p class="detail__count">
+								Lucy and 3 other firends recommendedthis hotel.
+							</p>
+
+							<p class="detail__friends">
+								<img src="img/friend1.jpg" alt="Friend 1" class="detail__img">
+								<img src="img/friend2.jpg" alt="Friend 1" class="detail__img">
+								<img src="img/friend3.jpg" alt="Friend 1" class="detail__img">
+								<img src="img/friend4.jpg" alt="Friend 1" class="detail__img">
+							</p>
+						</div>
+					</div>
+
+					<div class="detail__user-reviews">
+						<figure class="review">
+							<blockquote class="review__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</blockquote>
+							<div class="review__box">
+								<img src="img/man.jpg" alt="Photo of guy" class="review__img">
+								<div class=review__info-box">
+									<p class="review__name">Nick Smith</p>
+									<p class="review__date">12.06.2017.</p>
+								</div>
+								<div class="review__rating">7.4</div>
+							</div>
+						</figure>
+
+						<figure class="review">
+							<blockquote class="review__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</blockquote>
+							<div class="review__box">
+								<img src="img/woman.jpeg" alt="Photo of guy" class="review__img">
+								<div class=review__info">
+									<p class="review__name">Sara John</p>
+									<p class="review__date">23.03.2018</p>
+								</div>
+								<div class="review__rating">9.2</div>
+							</div>
+						</figure>
+
+						<button class="btn btn-show">Show all <span>&rarr;</span></button>
+					</div>
+				</div>
+
+				<div class="book-now">
+					<h2 class="book-now__heading">
+						Good news! We have 4 free rooms for your selected dates!
+					</h2>
+
+					<button class="book-now__btn">
+						<span class="book-now__btn__visible">Book now</span>
+						<span class="book-now__btn__invisible">Only 4 romms left</span>
+					</button>
+				</div>
 			</main>
 		</div>
 	</div>

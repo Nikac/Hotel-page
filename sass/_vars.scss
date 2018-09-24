@@ -1,3 +1,4 @@
+// colors
 $color-primary: #eb2f64;
 $color-primary-light: #FF3366;
 $color-primary-dark: #BA265D;
@@ -10,3 +11,16 @@ $color-grey-light-4: #ccc;
 $color-grey-dark-1: #333;
 $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
+
+
+// box shadow
+$shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0, .06);
+
+// responsive size
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; //11000
+$bp-medium: 47.20em; //755px
+$bp-small: 43.45em; //695px
+$bp-smalest: 31.25em; //500px
+$bp-phones: 28.12em; //500px
